@@ -1,8 +1,23 @@
 aid: iyuno
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/iyuno.png
 name: Iyuno
-description: 'Iyuno is a company surfaced as a portfolio company of softbank-vision-fund and added to
-  the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Iyuno is one of the world''s leading media localization companies, providing dubbing,
+  subtitling, and access services for film, television, and streaming platforms across dozens of languages
+  and markets worldwide. It was formed from the combination of Iyuno Media Group and SDI Media and is
+  backed by the SoftBank Vision Fund. Iyuno operates as an enterprise content and media-services provider;
+  as of this profiling it publishes no public developer portal, API documentation, or machine-readable
+  API artifacts, so this profile carries company identity only.'
 url: https://raw.githubusercontent.com/api-evangelist/iyuno/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +27,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- Media
+- Localization
+- Dubbing
+- Subtitling
+- Media Services
+- Streaming
+common:
+- type: DomainSecurity
+  url: security/iyuno-domain-security.yml
+- type: Website
+  url: https://iyuno.com
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
